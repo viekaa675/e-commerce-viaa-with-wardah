@@ -1,0 +1,299 @@
+:root {
+  --biru-wardah: #AEE6E6;
+  --biru-tua: #0098A5;
+  --putih: #ffffff;
+  --abu: #f9f9f9;
+  --hitam: #222;
+  font-family:'Lato',sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--abu);
+  color: var(--hitam);
+}
+
+header {
+  background-color: var(--biru-wardah);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: var(--biru-tua);
+}
+.search {
+  max-width: 10000px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--hitam);
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: var(--biru-tua);
+}
+
+.hero {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  color: var(--biru-tua);
+}
+
+.hero-text p {
+  margin-top: 0.5rem;
+}
+
+.produk-section {
+  padding: 2rem;
+  background-color: var(--putih);
+  text-align: center;
+}
+
+.produk-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.produk-card {
+  background: var(--abu);
+  padding: 1rem;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.produk-card:hover {
+  transform: translateY(-5px);
+}
+
+.produk-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.produk-card h3 {
+  margin: 0.5rem 0;
+  color: var(--biru-tua);
+}
+
+.produk-card span {
+  font-weight: bold;
+  color: var(--biru-tua);
+}
+.produk-container {
+  max-width: 800px;
+  margin: 1rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Kartu menu */
+.produk-item {
+  background-color: var(--light);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+  width: 220px;
+  text-align: center;
+}
+
+.produk-item  {
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+.produk-item p {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.produk-item button {
+  background-color: var(--accent);
+  border: none;
+  color: var(--light);
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.produk-item button:hover {
+  background-color: #e85b50;
+}
+#keranjang {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: var(--light);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#cartList {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+#cartList li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+#cartTotal {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* Form Pemesanan */
+#pesan {
+  max-width: 800px;
+  margin: 2rem auto 3rem;
+  background: var(--light);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#orderForm input,
+#orderForm textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 1.5px solid var(--primary);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+#orderForm button {
+  background-color: var(--primary);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  color: var(--light);
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#orderForm button:hover {
+  background-color: #005c6d;
+}
+.tentang-section, .kontak-section {
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--putih);
+}
+#KataMereka {
+  max-width: 800px;
+  margin: 3rem auto 4rem;
+  padding: 1rem 2rem;
+}
+
+.KataMereka-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.KataMereka {
+  background-color: var(--light);
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+  width: 300px;
+  font-style: italic;
+  color: var(--dark);
+  position: relative;
+}
+
+.KataMereka span {
+  display: block;
+  margin-top: 0.8rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+.wa-chat {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.wa-chat:hover {
+  background-color: #1ebe57;
+}
+
+footer {
+  background: var(--biru-tua);
+  color: var(--putih);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
